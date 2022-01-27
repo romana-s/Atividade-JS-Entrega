@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* No documento HTML podemos inserir a tag STYLE dentro do head e manipular o CSS como no seguinte exemplo:
+        */
+        body{
+            color:rgb(49, 2, 94);
+            background-color: #e8eae8; 
+            margin: 50px;
+            font-family: Verdana, Geneva, Arial, sans-serif; 
+            font-size: 30px; 
+            line-height: 180%; 
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /* E também podemos inserir a tag SCRIPT dentro do body e manipular o JS como no seguinte exemplo:
+        */
+        var nome = window.prompt('DIGITE SEU NOME')
+        var sobrenome = window.prompt('DIGITE SEU SOBRENOME')
+        var idade = Number.parseFloat(window.prompt('DIGITE SUA IDADE'))
+        var estado = window.prompt('QUAL ESTADO VOCÊ MORA?')
+        //document.write(`Seje bem vinde, <br> ${nome} ${sobrenome}! Que legal, você tem ${idade} anos e mora em ${estado}. Aproveite nosso site!`)
+        //document.write('Seje bem vinde,' + nome ' ' + sobrenome'!' <br>'Que legal, você tem ' + idade + ' anos e mora em ' + estado + '.' <br> ' Aproveite nosso site!')
+        document.write('Seje bem vinde,' + nome + ' ' + sobrenome + '!\n Que legal, você tem ' + idade + ' anos e mora em ' + estado + '.\n Aproveite nosso site!')
+    </script>
+    
+</body>
+</html>
